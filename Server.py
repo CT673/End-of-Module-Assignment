@@ -16,5 +16,6 @@ while True:
     if Config.opt == 1:
         print(name)
     else: 
+        
     c.send(bytes('Welcome to the dictionary', 'utf-8'))  # messages into the config file
     c.close()
