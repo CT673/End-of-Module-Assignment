@@ -28,5 +28,14 @@ client.connect((Config.server_address, Config.port_number))
 payload = serialization_dictionary(COUNTRIES)
 client.sent(payload)
 
+
 with open('GrpC.txt', 'w') as data:
     data.write(str(COUNTRIES))
+
+    
+# File encryption
+def encrypt():
+    f = Fernet(Config.key)
+    text = input("GrpC.txt").encode()
+    encrypted = f.encrypt(text)
+    print("Encrypted dictionary")
