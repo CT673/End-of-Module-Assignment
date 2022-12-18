@@ -20,8 +20,7 @@ countries = dict({'1': 'Argentina',
                   '19': 'United Arab Emirates',
                   '20': 'United Kingdom'})
 
-serialization_option = "binary"
-serialization_option = "JSON"
+
 serialization_option = "XML"
 
 server_address = 'localhost'
