@@ -27,4 +27,4 @@ server_address = 'localhost'
 port_number = 9999
 
 opt = 1
-   
+temp_file_name = "Temp.tso"
