@@ -23,7 +23,14 @@ def des(deserialization):
 
     else:
         print("format not recognised")
+        
 
+def decrypt():
+    f = Fernet(Config.key)
+    text = input("GrpC.txt").encode()
+    encrypted = f.encrypt(text)
+    decrypted = f.decrypt(encrypted)
+    
 
 payload = des(COUNTRIES)
 s.recv(payload)
