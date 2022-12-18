@@ -27,3 +27,6 @@ client = socket.socket()
 client.connect((Config.server_address, Config.port_number))
 payload = serialization_dictionary(COUNTRIES)
 client.sent(payload)
+
+with open('GrpC.txt', 'w') as data:
+    data.write(str(COUNTRIES))
