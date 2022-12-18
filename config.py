@@ -29,3 +29,6 @@ port_number = 9999
 
 opt = 1
 file_name = "GrpC.txt"
+
+from cryptography.fernet import Fernet
+key = Fernet.generate_key()
