@@ -34,3 +34,19 @@ def serialise_dictionary(self, serialization):
             f.close()
             print('Dictionary serialised as XML. Filename: xml')
             #we do not need to write to files, we can return either JSON, pickle or XML
+            
+# Edit dictionary
+class old_dictionary(COUNTRIES):
+    def __init__(self):
+        self = COUNTRIES()
+
+    def add(self, key, value):
+        self[key] = value
+
+
+edits = old_dictionary()
+edits.key = input("")
+edits.values = input("")
+edits.add(edits.key, edits.value)
+
+print(edits)
