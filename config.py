@@ -25,3 +25,6 @@ serialization_option = "XML"
 
 server_address = 'localhost'
 port_number = 9999
+
+opt = 1
+   
