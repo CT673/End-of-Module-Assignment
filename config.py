@@ -22,6 +22,7 @@ countries = dict({'1': 'Argentina',
 
 
 serialization_option = "XML"
+deserialization_option = "XML"
 
 server_address = 'localhost'
 port_number = 9999
