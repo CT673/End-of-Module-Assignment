@@ -27,4 +27,3 @@ client = socket.socket()
 client.connect((Config.server_address, Config.port_number))
 payload = serialization_dictionary(COUNTRIES)
 client.sent(payload)
-    
