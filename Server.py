@@ -8,11 +8,9 @@ import socket
 from dict2xml import dict2xml
 from cryptography.fernet import Fernet
 
-
 #from encryption_helper import EncryptionHelper
 #from configparser import NoSectionError, NoOptionError
 import Config
-
 
 # Deserialization
 def des(deserialization):
@@ -35,8 +33,6 @@ def ser(serialization):
     else:
         print("format not recognised")
 
-
-
 def decrypt():
     f = Fernet(Config.key)
     text = input("GrpC.txt").encode()
@@ -48,8 +44,7 @@ def encrypt():
     encrypted = f.encrypt(text)
     print("Encrypted dictionary")
 
-
-payload = des(Config.Countries)
+payload = (Config.Countries)
 payload_en = ser(Config.Countries)
 
 Cont = payload
@@ -57,16 +52,16 @@ otp = input('Where do you want to print it (1 to console, 2 to a XML, 3 to a TXT
 if otp == '1':
     print(payload)
 elif otp == '2':
-    with open('GrpC.XML', mode='a') as Config.Countries:
+    with open('GrpC.XML', mode='w') as Config.Countries:
         print(payload, file=Config.Countries)
 elif otp == '3':
-    with open('GrpC_encrypt.txt', mode='a') as Config.Countries:
+    with open('GrpC_encrypt.txt', mode='w') as Config.Countries:
         print(payload_en, file=Config.Countries)
 elif otp == '4':
-    with open('GrpC.txt', mode='a') as Config.Countries:
+    with open('GrpC.txt', mode='w') as Config.Countries:
         print(payload, file=Config.Countries)
 elif otp == '5':
-    with open('GrpC.json', mode='a') as Config.Countries:
+    with open('GrpC.json', mode='w') as Config.Countries:
         print(payload, file=Config.Countries)
 else:
     print('You write an invalid number, please try again')

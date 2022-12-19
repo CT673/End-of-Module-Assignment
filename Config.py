@@ -1,4 +1,5 @@
 # Creating a dictionary of 20 countries
+from cryptography.fernet import Fernet
 Countries = dict({'1': 'Argentina',
                   '2': 'Australia',
                   '3': 'Brazil',
@@ -21,13 +22,16 @@ Countries = dict({'1': 'Argentina',
                   '20': 'United Kingdom'})
 
 serialization_option = "XML"
+serialization_option = "JSON"
+serialization_option = "BINARY"
+
 deserialization_option = "XML"
+deserialization_option = "JSON"
+deserialization_option = "BINARY"
 
 server_address = 'localhost'
 port_number = 9999
 
 opt = 1
 file_name = "GrpC.txt"
-
-from cryptography.fernet import Fernet
 key = Fernet.generate_key()
