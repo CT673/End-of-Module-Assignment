@@ -1,7 +1,8 @@
 # End-of-Module-Assignment
 ## Introduction
+This group assignment is to build a simple client/server network, allowing transfer of data set across the network. 
 
-## Building the code
+## The code and the network
 
 ## Testing
 1. unit test - unittest
