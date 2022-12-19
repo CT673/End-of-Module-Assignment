@@ -1,5 +1,5 @@
 # Creating a dictionary of 20 countries
-countries = dict({'1': 'Argentina',
+Countries = dict({'1': 'Argentina',
                   '2': 'Australia',
                   '3': 'Brazil',
                   '4': 'Colombia',
@@ -19,7 +19,6 @@ countries = dict({'1': 'Argentina',
                   '18': 'Portugal',
                   '19': 'United Arab Emirates',
                   '20': 'United Kingdom'})
-
 
 serialization_option = "XML"
 deserialization_option = "XML"
