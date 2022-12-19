@@ -5,6 +5,13 @@ from pickle import dumps, loads, load, dump
 from dict2xml import dict2xml
 from cryptography.fernet import Fernet
 import Config
+import socket
+
+# Prepare the server to the connection with the client
+s = socket.socket()
+print('Socket created')
+s.listen(3)
+print('Waiting for connections')
 
 # Calling the deserialization for the different formats
 def des(deserialization):
